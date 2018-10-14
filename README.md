@@ -2,7 +2,7 @@
 
 В данной программе написана функция  
 *template\< class T\>  
-void qsort(vector\<T\> & a, int left, int right, function\<bool(T, T)\> compare)* , где  
+void qsort(vector\<T\> & data, int left, int right, function\<bool(T, T)\> compare)* , где  
 *data* - данные произвольной природы (в нашем случае *vector\<Student\>*, в классе определена операция сравнения по оценке),  
 *left* - начальный индекс,  
 *right* - конечный индекс,  
@@ -33,8 +33,7 @@ S 4
 C 4  
 P 4  
 B 6  
-
-U 6
-K 7
-X 8
-E 10
+U 6  
+K 7  
+X 8  
+E 10  
