@@ -1,9 +1,9 @@
 #Сортировка
 
 В данной программе написана функция  
-*template \< class T \>  
-void qsort(vector\< T\> & a, int left, int right, function\< bool(T, T)\> compare)* , где  
-*data* - данные произвольной природы (в нашем случае *vector\<Student\> *, в классе определена операция сравнения по оценке),  
+*template\< class T\>  
+void qsort(vector\<T\> & a, int left, int right, function\<bool(T, T)\> compare)* , где  
+*data* - данные произвольной природы (в нашем случае *vector\<Student\>*, в классе определена операция сравнения по оценке),  
 *left* - начальный индекс,  
 *right* - конечный индекс,  
 *comparator* - булевая функция, позволяющая сравнить 2 элемента, или лямбда-выражение.  
