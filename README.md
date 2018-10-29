@@ -9,7 +9,7 @@ void qsort(vector\<T\> & data, int left, int right, function\<bool(T, T)\> compa
 *comparator* - булевая функция, позволяющая сравнить 2 элемента, или лямбда-выражение.  
 *qsort* использует алгоритм быстрой сортироовки.
 
-Пример работы програмы (сортировка студентов по оценке):
+Пример 1 (сортировка студентов по оценке):
 ```C++
 qsort<Student>(students, 0, students.size() - 1, [](Student a, Student b) -> bool { return (a <= b); });
 ```
@@ -37,3 +37,15 @@ U 6
 K 7  
 X 8  
 E 10  
+
+
+Пример 2 (сортировка вектора целых чисел):
+```C++
+qsort<int>(v, 0, v.size() - 1, [](int a, int b) -> bool { return (a <= b); });
+```
+
+Вход:  
+1 -7 2 3 5 4 -8
+
+Выход:  
+-8 -7 1 2 3 4 5
